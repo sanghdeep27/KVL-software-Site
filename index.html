@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVL Electricals | Powering the Future</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #000; color: white; }
+        .navbar { background: #111; padding: 15px; }
+        .navbar-brand { color: #0f0; font-weight: bold; font-size: 1.5rem; }
+        .navbar-nav .nav-link { color: white; transition: color 0.3s ease; }
+        .navbar-nav .nav-link:hover { color: #0f0; }
+        .hero {
+            background: url('KVL.jpg') center/cover no-repeat;
+            padding: 150px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+        }
+        .hero-content {
+            max-width: 50%;
+        }
+        .hero h1 { font-size: 3.5rem; font-weight: bold; }
+        .hero p { font-size: 1.5rem; margin-top: 10px; }
+        .btn-primary { background-color: #0f0; border: none; padding: 10px 20px; font-size: 1.2rem; }
+        .btn-primary:hover { background-color: #0c0; }
+        .product-section { padding: 60px 0; text-align: center; }
+        .product-section h2 { color: #0f0; margin-bottom: 15px; }
+        .product-card {
+            background: #222;
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 255, 0, 0.4);
+        }
+        .product-card h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .product-card p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+        .footer { background: #111; color: #aaa; padding: 20px 0; text-align: center; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">KVL Electricals</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <div class="hero-content">
+            <h1>KVL Electrical</h1>
+            <h2>Powering the Future with Innovation</h2>
+            <p>Your Energy Partner</p>
+            <a href="#products" class="btn btn-primary">Explore Our Solutions</a>
+        </div>
+    </header>
+
+    <div class="container" id="products">
+        <div class="row product-section">
+            <div class="col-md-4">
+                <a href="kanishka.html" class="product-card">
+                    <h2>Kanishka Industries</h2>
+                    <p>Authorized Channel Partner for Legrand (NEDSPL) Pvt. Ltd.</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="solar.html" class="product-card">
+                    <h2>KVL Solar Solutions</h2>
+                    <p>Go Green, Go Solar - Sustainable Energy for a Better Future.</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="mj-electricals.html" class="product-card">
+                    <h2>MJ Electricals</h2>
+                    <p>Government Approved Electrical Contractor for Reliable Installations.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 KVL Electricals. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

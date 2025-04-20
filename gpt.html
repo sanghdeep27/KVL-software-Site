@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVL Electricals | Powering the Future</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #1d1d1d; color: white; margin: 0; padding: 0; }
+        
+        /* Navigation Bar */
+        .navbar { 
+            background: #111; /* Dark Gray */
+            padding: 20px; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand { 
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        .navbar-nav .nav-link { 
+            color: #fff; 
+            transition: color 0.3s ease; 
+        }
+        .navbar-nav .nav-link:hover { 
+            color: #f00; /* Vibrant Red */
+        }
+
+        /* Company Logo in Navbar */
+        .logo {
+            max-height: 50px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        /* Hero Section */
+        /* Hero Section */
+.hero {
+    background: #000; /* Black */
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: #fff;
+    position: relative;
+}
+.hero h1 { 
+    font-size: 3.5rem; 
+    
+    font-weight: 750; /* Extra bold */
+    color: #f00; /* Vibrant Red */
+    font-style: bold;
+}
+
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-image {
+    max-width: 45%;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+        .btn-primary { 
+            background-color: rgb(255, 255, 255); /* Vibrant Red */
+            border: none; 
+            padding: 10px 20px; 
+            font-size: 1rem; 
+            font-style: Bold;
+            color: black;
+            text-transform: uppercase;
+        }
+        .btn-primary:hover { 
+            background-color: #ffffff6e; /* Darker Red */
+        }
+        
+        /* Product Section */
+        .product-section { 
+            padding: 60px 0; 
+            text-align: center; 
+            position: relative; 
+            background: #222; /* Dark Background */
+        }
+        .product-section h2 { 
+            color: #fff; 
+            margin-bottom: 15px; 
+            text-transform: uppercase;
+        }
+
+        .product-section::before {
+            content: '';
+            position: absolute;
+            top: -20px; 
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #f00; /* Vibrant Red */
+        }
+
+        .product-card {
+            background: #333; /* Darker Gray */
+            padding: 20px;
+            border-radius: 8px; 
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #444;
+            margin-bottom: 20px;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            background-color: #444; /* Slightly Lighter Gray on hover */
+        }
+
+        .product-card h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #f00; /* Vibrant Red */
+        }
+        
+        .product-card p {
+            font-size: 1.2rem;
+            color: #ccc; /* Light Gray for text */
+        }
+
+        /* Footer Section */
+        .footer { 
+            background: #111; /* Dark Gray */
+            color: #fff; 
+            padding: 40px 0; 
+            text-align: center; 
+        }
+        .footer p { 
+            margin: 5px 0; 
+            color: #f00; /* Vibrant Red */
+        }
+        .footer a {
+            color: #f00;
+            text-decoration: none;
+            font-weight: bold;
+        }  
+
+            
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .btn-primary {
+                padding: 8px 16px;
+                font-size: 1rem;
+            }
+            .product-card {
+                margin-bottom: 15px;
+            }
+            .product-card h2 {
+                font-size: 1.5rem;
+            }
+            .product-card p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+            }
+            .product-section h2 {
+                font-size: 2rem;
+            }
+            .product-card {
+                padding: 15px;
+            }
+            .product-card h2 {
+                font-size: 1.3rem;
+            }
+            .product-card p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">KVL Electricals</a>
+            <img src="KVL1.png" alt="Company Logo" class="logo"> <!-- Replace 'logo.png' with your actual logo -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quality.html">Quality</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+   
+<header class="hero">
+    <div class="hero-content">
+        <h1>KVL Electrical</h1>
+        <h2>Powering the Future with Innovation</h2>
+        <p><b>Your Energy Partner</b></p>
+        <a href="#products" class="btn btn-primary">Explore Our Solutions</a>
+    </div>
+    <div class="hero-image">
+        <img src="KVL1.png" alt="Hero Image" />
+    </div>
+</header>
+
+    <div class="container" id="products">
+        <div class="row product-section">
+            <div class="col-md-4 col-sm-12">
+                <a href="kanishka.html" class="product-card">
+                    <h2>Kanishka Industries</h2>
+                    <p>Authorized Channel Partner for Legrand (NEDSPL) Pvt. Ltd.</p>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <a href="solar.html" class="product-card">
+                    <h2>KVL Solar Solutions</h2>
+                    <p>Go Green, Go Solar - Sustainable Energy for a Better Future.</p>
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <a href="mj-electricals.html" class="product-card">
+                    <h2>MJ Electricals</h2>
+                    <p>Government Approved Electrical Contractor for Reliable Installations.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 KVL Electricals. All Rights Reserved.</p>
+        <p>Address: Plot No. S-14, Ajanta Road, MIDC, Jalgaon - 425001, Maharashtra, India</p>
+        <p>GSTIN: 27AWNPM9521F1Z7</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
